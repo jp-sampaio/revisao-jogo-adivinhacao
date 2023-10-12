@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão do jogo da adivinhação</title>
+  
+  <link rel="shortcut icon"  href="./images/favicon.png" type="image/x-png">
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="appOne">
+    <h1>Guessing Game</h1>
+    <p>Enter a random number between 0 and 10:</p>
+
+    <div class="input-wrapper">
+      <input type="number" id="input-number" min="0" max="10" maxlength="1">
+      <button class="check">Check</button>
+    </div>
+  </div>
+
+  <div class="appTwo hide">
+    <h1>Congratulations!</h1>
+    <p>You got it right in (x) attempts</p>
+    <button class="again">Play again</button>
+  </div>
+</body>
+</html>

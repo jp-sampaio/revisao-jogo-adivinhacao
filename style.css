@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+  --bg-body: #5ae9d6;
+  --ff-general: 'Open Sans', sans-serif;
+  --cl-app: #fda9a9;
+}
+
+body {
+  background-color: var(--bg-body);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin-top: -5rem;
+}
+
+body,
+button,
+input {
+  font-size: 1.6rem;
+  font-family: var(--ff-general);
+}
+
+.hide {
+  display: none;
+}
+
+.appOne,
+.appTwo {
+  max-width: 50rem;
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--cl-app);
+  border-radius: 1rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.212);
+}
+
+.appOne h1,
+.appTwo h1 {
+  text-transform: uppercase;
+  color: rgb(68, 68, 68);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.appOne p,
+.appTwo p {
+  font-weight: 400;
+  color: #383737;
+  padding-bottom: 1rem;
+}
+
+.input-wrapper input {
+  border: none; 
+  padding: 1rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.input-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-wrapper .check {
+  border: none;
+  padding: .5rem;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.appTwo .again {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
